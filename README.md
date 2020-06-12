@@ -1,8 +1,10 @@
-# Homies
-
-<img src="homies.png" alt="homies" style="width: 200px;"/>
-
-Reproducible set of dotfiles and packages for Linux and macOS
+<h1 align="center" style="border-bottom: none;">🏠 Casa</h1>
+<h3 align="center">Reproducible set of dotfiles and packages for Linux and macOS/h3>
+<p align="center">
+  <a href="#badge">
+    <img alt="semantic-release" src="https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg">
+  </a>
+</p>
 
 ---
 
@@ -13,16 +15,14 @@ available:
 
 ``` shell
 $ # install from the latest master
-$ nix-env -if https://github.com/nmattia/homies/tarball/master --remove-all
+$ nix-env -if https://github.com/samcraigdev/casa/tarball/master --remove-all
 $ # make sure that the .bashrc is sourced
 $ echo 'if [ -x "$(command -v bashrc)" ]; then $(bashrc); fi' >> ~/.bashrc
 ```
 
-The homies will be available in all subsequent shells, including the
+***Casa*** will be available in all subsequent shells, including the
 customizations (vim with my favorite plugins, tmux with my customized
-configuration, etc). See the [introduction blog post][post] for an overview.
-
-[post]: http://nmattia.com/posts/2018-03-21-nix-reproducible-setup-linux-macos.html
+configuration, etc).
 
 ## How-To
 
