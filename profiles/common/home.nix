@@ -17,7 +17,7 @@ rec {
   # compatible, in order to avoid breaking some software such as database
   # servers. You should change this only after NixOS release notes say you
   # should.
-  home.stateVersion = "19.03";  # Did you read the comment?
+  home.stateVersion = "19.03";
 
   imports = with config.programs; [
     git
@@ -30,6 +30,7 @@ rec {
 
   home.packages = with pkgs; [
     direnv
+    gitAndTools.gitflow
   ];
 
 
