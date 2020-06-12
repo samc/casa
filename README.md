@@ -56,3 +56,9 @@ Deleting old configurations by timestamps:
 ``` shell
 $ home-manager expire-generations [-30 days | 2018-01-01]
 ```
+
+## Acknowledgements
+
+Jean-Philippe Cugnet's [confkit](https://github.com/ejpcmac/confkit)
+
+Nicolas Mattia's [homies](https://github.com/nmattia/homies)
