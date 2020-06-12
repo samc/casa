@@ -1,4 +1,4 @@
-<h1 align="center" style="border-bottom: none;">🏠 Casa</h1>
+<h1 align="center" style="border-bottom: none;">🏠  Casa</h1>
 <br />
 <h3 align="center">Reproducible set of dotfiles and packages for Linux and macOS via <code>home-manager</code></h3>
 <p align="center">
