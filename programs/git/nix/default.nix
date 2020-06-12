@@ -22,8 +22,8 @@ in
 
     signing = {
       gpgPath = mkDefault "gpg2";
-      signByDefault = mkDefault true;
-      key = mkDefault "{{CHANGE}}";
+      signByDefault = mkDefault false;
+      key = mkDefault "";
     };
   };
 }
