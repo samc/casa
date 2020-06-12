@@ -16,6 +16,7 @@ in
 {
   imports = [ ../common/home.nix ];
 
+  # Linux spedic packages.
   home.packages = with pkgs; [
 
   ];
