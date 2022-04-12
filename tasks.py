@@ -1,7 +1,7 @@
 # INVOKE
 #
 # @author      Sam Craig <sam@talisman.dev>
-# @link        https://github.com/talismanco/talismanpkgs
+# @link        https://github.com/talismanco/growthatpkgs
 # ------------------------------------------------------------------------------
 
 

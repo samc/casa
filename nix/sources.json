@@ -1,14 +1,27 @@
 {
+    "growthatpkgs": {
+        "branch": "main",
+        "description": "A Nix Packages collection for the GrowThat development ecosystem.",
+        "homepage": null,
+        "owner": "growthatco",
+        "repo": "growthatpkgs",
+        "rev": "ad579cf10b469d8cbc5d27c3176ecc8daa2d7c2a",
+        "sha256": "0viv5gm91sg46i0i1s9zqzl4w6kwbl66af5p8cdp5rl0p6glzfz4",
+        "type": "tarball",
+        "url": "https://github.com/growthatco/growthatpkgs/archive/ad579cf10b469d8cbc5d27c3176ecc8daa2d7c2a.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz",
+        "version": "1.0.2"
+    },
     "niv": {
         "branch": "master",
         "description": "Easy dependency management for Nix projects",
         "homepage": "https://github.com/nmattia/niv",
         "owner": "nmattia",
         "repo": "niv",
-        "rev": "62fcf7d0859628f1834d84a7a0706ace0223c27e",
-        "sha256": "06ghvcsarvi32awxvgdxivaji8fsdhv46p49as8xx8whwia9d3rh",
+        "rev": "df49d53b71ad5b6b5847b32e5254924d60703c46",
+        "sha256": "1j5p8mi1wi3pdcq0lfb881p97i232si07nb605dl92cjwnira88c",
         "type": "tarball",
-        "url": "https://github.com/nmattia/niv/archive/62fcf7d0859628f1834d84a7a0706ace0223c27e.tar.gz",
+        "url": "https://github.com/nmattia/niv/archive/df49d53b71ad5b6b5847b32e5254924d60703c46.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "nixpkgs": {
@@ -17,22 +30,10 @@
         "homepage": null,
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "ea7d4aa9b8225abd6147339f0d56675d6f1f0fd1",
-        "sha256": "11bwgyglag40w2y50nq2gg4697ymdjprkgip75kb3hjrvvwpma53",
+        "rev": "42948b300670223ca8286aaf916bc381f66a5313",
+        "sha256": "09nx6mmld7iag3ffcfz4ybk0w9j3sg2akjqmf41g1rajxgadc516",
         "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/ea7d4aa9b8225abd6147339f0d56675d6f1f0fd1.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "talismanpkgs": {
-        "branch": "master",
-        "description": " Nix Packages collection",
-        "homepage": "https://github.com/talismanco/talismanpkgs",
-        "owner": "talismanco",
-        "repo": "talismanpkgs",
-        "rev": "0ba04368f4fd5dcc433aca8aa65e64c929525265",
-        "sha256": "0qzif413wddfrny0pzw4r5rp3rnmwlrc1a50b5ij185r0414c83l",
-        "type": "tarball",
-        "url": "https://github.com/talismanco/talismanpkgs/archive/0ba04368f4fd5dcc433aca8aa65e64c929525265.tar.gz",
+        "url": "https://github.com/NixOS/nixpkgs/archive/42948b300670223ca8286aaf916bc381f66a5313.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }

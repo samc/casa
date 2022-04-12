@@ -19,7 +19,7 @@ in rec {
     [
       # <nixpkgs>
       # ...
-      # <talismanpkgs>
+      # <growthatpkgs>
       # ...
     ];
 

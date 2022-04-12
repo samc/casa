@@ -13,6 +13,9 @@ in rec {
   home.stateVersion = "20.09";
 
   home.file = {
+    # `zsh` aliases
+    ".config/zsh/aliases".source = config.file "programs/zsh/aliases";
+    ".config/zsh/aliases".recursive = true;
     # `zsh` config
     ".config/zsh/config".source = config.file "programs/zsh/config";
     ".config/zsh/config".recursive = true;
@@ -29,35 +32,42 @@ in rec {
   home.packages = with config.pkgs; [
     # <nixpkgs>
     nixpkgs.act
-    nixpkgs.antibody
     nixpkgs.direnv
     nixpkgs.gitAndTools.gh
     nixpkgs.gitAndTools.gitflow
     nixpkgs.glow
+    nixpkgs.gtop
+    nixpkgs.jq
     nixpkgs.ngrok
-    nixpkgs.nixfmt
+    nixpkgs.niv
+    nixpkgs.openssh
+    nixpkgs.screenfetch
     nixpkgs.vault
     nixpkgs.vimPlugins.vim-plug
-    # <talismanpkgs>
-    talismanpkgs.bazel
-    talismanpkgs.cargo
-    talismanpkgs.clippy
-    talismanpkgs.go
-    talismanpkgs.google-cloud-sdk
-    talismanpkgs.helm
-    talismanpkgs.jq
-    talismanpkgs.k9s
-    talismanpkgs.mirror
-    talismanpkgs.nodejs
-    talismanpkgs.openjdk
-    talismanpkgs.python
-    talismanpkgs.rustc
-    talismanpkgs.skaffold
+    # <growthatpkgs>
+    growthatpkgs.bazel
+    growthatpkgs.clippy
+    growthatpkgs.go
+    growthatpkgs.google-cloud-sdk
+    growthatpkgs.helm
+    growthatpkgs.k9s
+    growthatpkgs.python
+    growthatpkgs.nodejs
+    growthatpkgs.rust
+    growthatpkgs.skaffold
   ];
 
   # === Programs ===
 
-  imports = with config.programs; [ git fzf keychain neovim ssh tmux zsh ];
+  imports = with config.programs; [ 
+    git
+    fzf
+    keychain
+    neovim
+    ssh
+    tmux
+    zsh
+  ];
 
   programs.home-manager = { enable = true; };
 

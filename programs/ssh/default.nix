@@ -8,6 +8,5 @@ in rec {
   programs.ssh = {
     enable = true;
     compression = true;
-    extraConfig = (readFile (config.file "config/ssh.conf"));
   };
 }

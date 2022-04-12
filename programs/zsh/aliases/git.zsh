@@ -1,6 +1,6 @@
-###############
-# Git Aliases #
-###############
+# -===========================================================================-
+# -==[ Git aliases ]==========================================================-
+# -===========================================================================-
 
 alias glgs='glg --show-signature'
 alias glol="git log --graph --pretty=format:'%Cgreen%G?%Creset %C(yellow)%h%Creset - %s%C(auto)%d%Creset %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
@@ -20,25 +20,14 @@ alias gtlrm='git tag -d $(git tag -l)'
 alias gtrrm='git fetch && git push origin --delete $(git tag -l)'
 alias gtrm='gtrrm && gtlrm'
 
-# git-flow
+# --=[ Git Flow ]=-------------------------------------------------------------
+
 alias gf='git flow'
 alias gff='git flow feature'
 alias gfr='git flow release'
 alias gfh='git flow hotfix'
 alias gfs='git flow support'
 
-##
-## GitHub CLI
-##
+# --=[ Github CLI ]=-----------------------------------------------------------
 
-# Setup
-export HUB_PROTOCOL=https
-
-# Aliases
-alias hcl='hub clone --recurse-submodules'
-alias hi='hub issue'
-alias hic='hub issue create'
-
-his() {
-    hub issue show $@ | bat -l md
-}
+gh alias set new 'repo create' &> /dev/null

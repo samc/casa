@@ -1,7 +1,7 @@
 { sources ? import ./nix {} }:
 let
   inherit (sources)
-    talismanpkgs
+    growthatpkgs
     nixpkgs
   ;
 in
@@ -12,11 +12,12 @@ nixpkgs.mkShell rec {
     paths = buildInputs;
   };
   buildInputs = [
-    # <talismanpkgs>
-    talismanpkgs.jq_1_6
-    talismanpkgs.nodejs_12_18_3
-    talismanpkgs.python_3_7
+    # <growthatpkgs>
+    growthatpkgs.act
+    growthatpkgs.nodejs
+    growthatpkgs.python
     # <nixpkgs>
+    nixpkgs.shfmt
     # ...
   ];
 }

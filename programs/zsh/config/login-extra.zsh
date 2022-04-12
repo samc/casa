@@ -1,2 +1,0 @@
-# Target directory
-cd $HOME

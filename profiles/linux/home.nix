@@ -6,7 +6,6 @@
 
 let config = import ../..;
 in rec {
-  imports = [ ../common/home.nix ];
 
   # === Configuration ===
 
@@ -19,7 +18,7 @@ in rec {
     [
       # <nixpkgs>
       # ...
-      # <talismanpkgs>
+      # <growthatpkgs>
       # ...
     ];
 
@@ -28,5 +27,7 @@ in rec {
   programs.git = { extraConfig.credential.helper = "store"; };
 
   # === Services ===
+  # ...
 
+  imports = [ ../common/home.nix ];
 }

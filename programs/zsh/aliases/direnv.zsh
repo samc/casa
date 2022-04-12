@@ -1,14 +1,9 @@
-# =========================================
-# === direnv (Setup, Aliases & Helpers) ===
-# =========================================
-
-# === Setup ===
+# -===========================================================================-
+# -==[ direnv aliases ]=======================================================-
+# -===========================================================================-
 
 eval "$(direnv hook zsh)"
 
-# === Aliases ===
-
-# direnv
 alias ds='direnv status'
 alias de='direnv edit'
 alias da='direnv allow'
@@ -25,6 +20,3 @@ alias dar='direnv deny && rm -rf .direnv'
 # want to look at are likely to differ from these ones, so it is only provided
 # as an example you may want to override.
 alias dl='find ~/builds -name .direnv'
-
-# === Helpers ===
-# ...

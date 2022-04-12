@@ -5,5 +5,7 @@ rec {
     enable = true;
     userName = "Sam Craig";
     userEmail = "contact@samcraig.io";
+    aliases = { 
+      uncommit = "reset 'HEAD^'"; };
   };
 }

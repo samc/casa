@@ -1,18 +1,14 @@
-##################
-# Docker Aliases #
-##################
+# -===========================================================================-
+# -==[ docker aliases ]========================================================-
+# -===========================================================================-
 
-# Manual start for the Docker deamon
-alias dos='sudo $(which dockerd)'
-
-# General aliases
 alias doi='docker info'
 alias doa='docker attach --sig-proxy=false'
 alias dor='docker run'
 alias dost='docker start'
 alias dosp='docker stop'
 
-# Docker image management
+# --=[ Images ]=---------------------------------------------------------------
 alias doil='docker image ls'
 alias doir='docker image rm'
 alias doip='docker image prune'
@@ -21,13 +17,13 @@ alias doilo='docker image load'
 alias dois='docker image save'
 alias drm='docker system prune --all --force'
 
-# Docker container management
+# --=[ Containers ]=-----------------------------------------------------------
 alias docl='docker container ls'
 alias docla='docker container ls --all'
 alias docr='docker container rm'
 alias docp='docker container prune'
 
-# Docker volume management
+# --=[ Volumes ]=--------------------------------------------------------------
 alias dovl='docker volume ls'
 alias dovr='docker volume rm'
 alias dovp='docker volume prune'

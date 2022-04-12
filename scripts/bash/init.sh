@@ -44,9 +44,9 @@ install_home_manager_profile () {
 init () {
   local platform=$(get_platform)
 
-  install_nix
+  # install_nix
   install_home_manager_profile $platform
-  install_home_manager
+  # install_home_manager
 }
 
 init
